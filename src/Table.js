@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 
 
-const TableHeader =  () => (
-    <thead />  
+const TableHeader = () => (
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Job</th>
+        </tr>
+    </ thead>  
 )
+
 
 const TableBody = props => {
     const rows = props.characterData.map((row, index) => {
