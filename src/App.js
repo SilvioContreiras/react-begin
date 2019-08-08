@@ -5,27 +5,11 @@ import Table from './Table'
 class App extends Component {
 
     state = {
-        characters: [
-            {
-                name: 'Charlie',
-                job: 'Janitor',
-            },
-            {
-                name: 'Mac',
-                job: 'Bouncer',
-            },
-            {
-                name: 'Dee',
-                job: 'Aspiring actress',
-            },
-            {
-                name: 'Dennis',
-                job: 'Bartender',
-            },
-        ]
+        characters: [],
     }
 
     removeCharacter = index => {
+
         const { characters } = this.state
 
         this.setState({
@@ -41,7 +25,7 @@ class App extends Component {
         return (
              /* characterData is not a reserved keyword  is a kind of how we passa data through data- */ 
 
-            <div className='container'>
+            <div className='container spaceTop'>
                 <Table characterData={characters} removeCharacter={this.removeCharacter}/>
             </div>
         )

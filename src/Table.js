@@ -34,7 +34,7 @@ const TableBody = props => {
 class Table extends Component {
     render() {
         const { characterData, removeCharacter } = this.props
-
+        console.log(removeCharacter);
         return (
             <table>
                 <TableHeader />

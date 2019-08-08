@@ -665,3 +665,8 @@ caption {
   =============== */
 /* Layout
   =============== */
+
+
+  .spaceTop {
+    margin-top: 5%;
+  }
