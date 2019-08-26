@@ -10,7 +10,6 @@ const TableHeader = () => (
     </ thead>  
 )
 
-
 const TableBody = props => {
 
     const rows = props.characterData.map((row, index) => {
